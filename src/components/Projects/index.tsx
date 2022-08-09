@@ -20,7 +20,7 @@ const ProjectsComponent: FC = () => {
       id='projects-section'
       sx={{
         p: { md: 100 / 8 },
-        pt: { xs: 8 },
+        py: { xs: 8 },
         textAlign: 'center',
       }}
     >

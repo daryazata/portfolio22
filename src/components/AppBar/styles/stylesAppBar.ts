@@ -107,8 +107,8 @@ export const styleNavBarIcon = {
 export const styleNavBarContainer = {
   zIndex: 1999,
   position: 'fixed',
-  height: 3 * 62,
-  top: 63,
+  height: 3 * 65,
+  top: 60,
   right: 0,
   bgcolor: COLORS.THEME_BG_BLACK,
   fontFamily: 'Poppins, sans-serif',
@@ -116,6 +116,7 @@ export const styleNavBarContainer = {
   fontWeight: 600,
   borderRadius: 1,
   px: '5vw',
+  pt: 1,
 };
 
 export const styleNavBarItem = {
@@ -125,5 +126,5 @@ export const styleNavBarItem = {
   display: 'block',
   width: '80vw',
   letterSpacing: 1.1,
-  pt: 1.5,
+  pt: 2,
 };

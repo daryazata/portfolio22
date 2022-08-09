@@ -26,11 +26,11 @@ const AppBarMobile: FC = () => {
     };
   }, []);
 
-  const homeFocused = scrollPosition < 401 ? focusedMobileStyle : {};
+  const homeFocused = scrollPosition < 371 ? focusedMobileStyle : {};
   const aboutFocused =
-    scrollPosition >= 401 && scrollPosition < 1448 ? focusedMobileStyle : {};
+    scrollPosition >= 371 && scrollPosition < 1268 ? focusedMobileStyle : {};
 
-  const projectFocused = scrollPosition >= 1448 ? focusedMobileStyle : {};
+  const projectFocused = scrollPosition >= 1268 ? focusedMobileStyle : {};
 
   const [showSideMenu, setShowSideMenu] = useState(false);
   return (
