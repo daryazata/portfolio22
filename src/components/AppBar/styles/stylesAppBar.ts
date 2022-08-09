@@ -32,7 +32,6 @@ export const styleAppBarItemTitle = {
   letterSpacing: '0.1rem',
   fontSize: '1.1rem',
   fontWeight: 600,
-  backgroundColor: 'lightgray',
   display: { md: 'inline', xs: 'block' },
   ':hover': {
     borderBottom: `3px solid ${COLORS.THEME_BLUE}`,
@@ -74,7 +73,7 @@ export const focusedMobileStyle = {
 export const styleContainerBox = {
   px: { md: 100 / 8 },
   pt: 2,
-  pb: 22 / 8,
+  pb: 20 / 8,
   display: { md: 'flex', xs: 'none' },
   alignItems: 'center',
   justifyContent: 'space-between',
