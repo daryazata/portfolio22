@@ -62,7 +62,6 @@ export const styleContainerBox = {
   py: { xs: 6 },
   justifyContent: 'center',
   textAlign: { xs: 'center', md: 'left' },
-
   display: { lg: 'flex', md: 'block' },
   bgcolor: COLORS.GRAY_3,
 };
