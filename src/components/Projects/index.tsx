@@ -2,7 +2,7 @@ import { FC } from 'react';
 import { Box } from '@mui/material';
 
 import SingleProject from './SingleProject';
-import { ProjectsTitle } from './styles/stylesProjects';
+import { ProjectsTitle, styleProjectsContainer } from './styles/stylesProjects';
 
 const projects = [
   { title: 'Project 1', text: 'This is my project 1' },
@@ -20,14 +20,12 @@ const ProjectsComponent: FC = () => {
       id='projects-section'
       sx={{
         p: { md: 100 / 8 },
-        py: { xs: 2 },
+        pt: { xs: 8 },
         textAlign: 'center',
       }}
     >
       <ProjectsTitle>My Latest Projects</ProjectsTitle>
-      <Box sx={{ display: { md: 'flex' }, justifyContent: 'center' }}>
-        {displayProjects}
-      </Box>
+      <Box sx={styleProjectsContainer}>{displayProjects}</Box>
     </Box>
   );
 };

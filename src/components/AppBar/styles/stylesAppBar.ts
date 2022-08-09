@@ -66,7 +66,7 @@ export const focusedStyle = {
   color: COLORS.THEME_BLUE,
 };
 export const focusedMobileStyle = {
-  borderBottom: `2px solid ${COLORS.BLUE_2}`,
+  borderBottom: `3.5px solid ${COLORS.BLUE_2}`,
   color: COLORS.BLUE_2,
 };
 
@@ -87,15 +87,17 @@ export const styleContainerBox = {
 export const styleContainerBoxMobile = {
   zIndex: 1999,
   position: 'fixed',
-  width: '101vw',
-  top: 0,
-  height: 55,
-  bgcolor: COLORS.THEME_YELLOW_TRANS,
+  width: '90vw',
+  top: -2,
+  right: 0,
+  height: 70,
+  bgcolor: COLORS.THEME_BG_BLACK,
   display: { xs: 'flex', md: 'none' },
+  borderRadius: 1,
 };
 
 export const styleNavBarIcon = {
-  padding: 11,
+  padding: 20,
   marginRight: 10,
   height: 30,
   width: 30,
@@ -105,24 +107,23 @@ export const styleNavBarIcon = {
 export const styleNavBarContainer = {
   zIndex: 1999,
   position: 'fixed',
-  height: 3 * 57,
-  width: '100%',
-  top: 55,
-  bgcolor: COLORS.THEME_YELLOW_TRANS,
+  height: 3 * 60,
+  top: 65,
+  right: 0,
+  bgcolor: COLORS.THEME_BG_BLACK,
   fontFamily: 'Poppins, sans-serif',
-  fontSize: '1.3rem',
+  fontSize: '1.0rem',
   fontWeight: 600,
-  letterSpacing: 1.3,
+  borderRadius: 1,
+  px: '5vw',
 };
 
 export const styleNavBarItem = {
-  height: 55,
-  width: '100%',
-  borderBottom: '0.3px solid ' + COLORS.GRAY_1,
-  borderTop: '0.3px solid ' + COLORS.GRAY_1,
+  height: 35,
   textDecoration: 'none',
-  color: COLORS.GRAY_1,
-  display: 'flex',
-  justifyContent: 'center',
-  alignItems: 'center',
+  color: COLORS.GRAY_2,
+  display: 'block',
+  width: '80vw',
+  letterSpacing: 1.1,
+  pt: 1.5,
 };

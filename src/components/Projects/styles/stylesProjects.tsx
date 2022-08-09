@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { COLORS } from '../../../globalStyles/colors';
 import bgTestRose from '../../../assets/bg-test-rose.jpg';
+import { styleFlexDirectionGlobalMui } from '../../../globalStyles';
 
 export const ProjectsTitle = styled.p`
   color: ${COLORS.WHITE};
@@ -52,8 +53,8 @@ export const ItemContainerStyle = styled.div`
   }
 
   @media (max-width: 770px) {
-    height: 80vh;
-    width: 90vw;
+    height: 500px;
+    width: 350px;
     margin-top: 30px;
   }
 `;
@@ -88,3 +89,10 @@ export const ButtonStyle = styled.div`
     color: ${COLORS.GRAY_3};
   }
 `;
+
+export const styleProjectsContainer = {
+  ...styleFlexDirectionGlobalMui,
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+};

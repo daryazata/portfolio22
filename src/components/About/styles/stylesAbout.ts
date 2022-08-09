@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { styleFlexDirectionGlobalMui } from '../../../globalStyles';
 import { COLORS } from '../../../globalStyles/colors';
 import {
   AppBarItemTitle,
@@ -61,8 +62,9 @@ export const styleContainerBox = {
   p: { md: 100 / 8 },
   py: { xs: 6 },
   justifyContent: 'center',
-  textAlign: { xs: 'center', md: 'left' },
-  display: { lg: 'flex', md: 'block' },
+  alignItems: 'center',
+  display: 'flex',
+  ...styleFlexDirectionGlobalMui,
   bgcolor: COLORS.GRAY_3,
 };
 
@@ -73,7 +75,7 @@ export const DetailsTitleStyle = styled.p`
   font-size: 1.05rem;
   letter-spacing: 0.05rem;
   @media (max-width: 770px) {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 `;
 export const DetailsTextStyle = styled.p`
@@ -82,8 +84,10 @@ export const DetailsTextStyle = styled.p`
   font-weight: 400;
   margin-top: -10px;
   letter-spacing: 0.05rem;
+  line-height: 1.6rem;
   @media (max-width: 770px) {
-    font-size: 0.9rem;
+    font-size: 0.92rem;
     margin-top: -5px;
+    line-height: 1.4rem;
   }
 `;
