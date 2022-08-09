@@ -2,9 +2,6 @@ import { FC, Fragment } from 'react';
 import { Box } from '@mui/system';
 import { DetailsTextStyle, DetailsTitleStyle } from './styles/stylesAbout';
 
-// todo later: there are some styled component warning to check  : The component styled.p with the id of "sc-bBrHrO" has been created dynamically.
-// most likely because of the map function
-
 type Props = {
   details: {
     title: string;
