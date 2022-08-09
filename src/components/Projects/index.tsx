@@ -10,8 +10,8 @@ import handsScreenShot from '../../assets/hands.png';
 const rbb24 = {
   title: 'Development',
   descr: `
-  Implementation of new UI Design for RBB 24 App,
-  cross-platform development with React Native
+  Implementation of the new UI Design for the RBB 24 App.
+  Cross-platform development with React Native.
 `,
   link: 'https://play.google.com/store/apps/details?id=de.rbb.rbb24&gl=US',
 };
@@ -20,7 +20,7 @@ const leasingM = {
   title: 'Maintenance',
   descr: `
   Maintanance of the LeasingMarkt App,
-  bug-fixes and feature developement 
+  bug-fixes and feature developement.
 `,
   link: 'https://play.google.com/store/apps/details?id=de.leasingmarkt.app',
 };
@@ -28,7 +28,7 @@ const leasingM = {
 const vol_planner = {
   title: 'Developent',
   descr: `
-  Implementation of the new UI for the Volunteer Planner platform. Techstack: Python/ Django (Backend), React, MUI (Frontend), WIP 🔨
+  Implementation of the new UI for the Volunteer Planner platform. Techstack: Python/ Django (backend), React, MUI (frontend), WIP 🔨
   
   `,
 };

@@ -32,9 +32,9 @@ const AppBarMobile: FC = () => {
 
   const homeFocused = scrollPosition < 371 ? focusedMobileStyle : {};
   const aboutFocused =
-    scrollPosition >= 371 && scrollPosition < 1268 ? focusedMobileStyle : {};
+    scrollPosition >= 371 && scrollPosition < 1703 ? focusedMobileStyle : {};
 
-  const projectFocused = scrollPosition >= 1268 ? focusedMobileStyle : {};
+  const projectFocused = scrollPosition >= 1703 ? focusedMobileStyle : {};
 
   const [showSideMenu, setShowSideMenu] = useState(false);
   return (

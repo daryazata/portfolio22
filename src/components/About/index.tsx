@@ -13,20 +13,38 @@ import {
 
 const aboutMeTitleText = 'About Me';
 const aboutMeTextText = `
-I'm a JavaScript / TypeScript developer from Berlin. Since I wrote my bachelor thesis about a fullstack single-page application in 2019, I have worked on various projects in the JavaScript area. I mainly work in the front-end area, but I'm also interested in back-end development.
-Mainly I have worked with React / React Native until now.
+I'm a JavaScript / TypeScript developer from Berlin. Since I wrote my bachelor thesis about a fullstack single-page application in 2019, I have worked on various projects in JS/ TS ecosystem. I mainly work on front-end projects, but I'm also interested in back-end development.
+
 `;
 
 const skillSection = [
   {
-    title: 'SKILL React Development 1',
-    text: ' 1 I develop React Applications from scratch or maintain existing ones',
+    title: 'React / React Native',
+    text: `The majority of the projects I've worked on have been React / RN projects. `,
+  },
+  {
+    title: 'TS / JS',
+    text: `I mostly write in TS nowadays. Time after time I still have a delightful encounter with JS 🫶🏼 . `,
   },
 ];
 const experienceSection = [
   {
-    title: 'EXPERIENCE React Development 1',
-    text: ' 1 I develop React Applications from scratch or maintain existing ones',
+    title: 'Hybrid Heroes',
+    text: 'Development and maintenance of cross-platform apps. Techstack: React Native/ Typescript (Ionic/ Angular)',
+  },
+  {
+    title: 'Incloud',
+    text: 'Development and maintenance of web apps. Techstack: React, Node / Typescript, GraphQL',
+  },
+  {
+    title: 'Web Development since 2018',
+    text: 'I started to work in web development in 2018. In that time I worked with PHP, Bootstrap and MSSQL.  ',
+  },
+];
+const educationSection = [
+  {
+    title: 'HTW Berlin 2021',
+    text: 'In 2021 I graduated in Environmental Computer Science B.Sc. It was an interesting study mix of environmental and CS subjects.',
   },
 ];
 
@@ -84,6 +102,10 @@ const AboutComponent: FC = () => {
         <DetailsComponent
           visible={visibleSection[1]}
           details={experienceSection}
+        />
+        <DetailsComponent
+          visible={visibleSection[2]}
+          details={educationSection}
         />
       </Box>
     </Box>
