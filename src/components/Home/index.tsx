@@ -20,9 +20,7 @@ const HomeComponent = () => {
       <WelcomeText>{welcomeText.toLocaleUpperCase()}</WelcomeText>
       <WelcomeTextName>{welcomeTextName}</WelcomeTextName>
       <WelcomeTextDeveloper>{welcomeTextDeveloper}</WelcomeTextDeveloper>
-
       <WelcomeTextDeveloper2>{welcomeTextDeveloper2}</WelcomeTextDeveloper2>
-
       <WelcomeTextBase>{welcomeTextBase}</WelcomeTextBase>
     </Box>
   );
