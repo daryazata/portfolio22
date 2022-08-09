@@ -29,11 +29,11 @@ const AppBar: FC = () => {
 
   const backgroundColor = scrollPosition > 100 ? COLORS.GRAY_3 : COLORS.GRAY_2;
 
-  const homeFocused = scrollPosition < 721 ? focusedStyle : {};
+  const homeFocused = scrollPosition < 736 ? focusedStyle : {};
   const aboutFocused =
-    scrollPosition >= 721 && scrollPosition < 1521 ? focusedStyle : {};
+    scrollPosition >= 736 && scrollPosition < 1642 ? focusedStyle : {};
 
-  const projectFocused = scrollPosition >= 1521 ? focusedStyle : {};
+  const projectFocused = scrollPosition >= 1642 ? focusedStyle : {};
 
   return (
     <>

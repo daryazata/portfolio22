@@ -46,7 +46,7 @@ export const WelcomeTextDeveloper2 = styled.p`
   letter-spacing: 0.25rem;
   animation: ${vanishToTop2} 5s linear infinite;
   position: absolute;
-  bottom: 280px;
+  bottom: 240px;
   opacity: 0;
   @media (max-width: 770px) {
     bottom: 105px;
@@ -66,7 +66,7 @@ export const WelcomeTextBase = styled.p`
 
 export const styleContainerBox = {
   px: { md: 100 / 8, xs: 3 },
-  py: { md: 150 / 8, xs: 10 },
+  py: { md: 110 / 8, xs: 10 },
   pb: { xs: 7 },
   bgcolor: COLORS.GRAY_2,
   position: 'relative',
