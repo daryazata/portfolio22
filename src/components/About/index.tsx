@@ -13,7 +13,8 @@ import {
 
 const aboutMeTitleText = 'About Me';
 const aboutMeTextText = `
-I am a Javascript / Typescript Developer from Berlin. I like to with JS based libraries and frameworks. The main framework I have been working with is React. I have work also with React Native. 
+I'm a JavaScript / TypeScript developer from Berlin. Since I wrote my bachelor thesis about a fullstack single-page application in 2019, I have worked on various projects in the JavaScript area. I mainly work in the front-end area, but I'm also interested in back-end development.
+Mainly I have worked with React / React Native until now.
 `;
 
 const skillSection = [

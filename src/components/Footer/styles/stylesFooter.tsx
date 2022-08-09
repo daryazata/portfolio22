@@ -1,6 +1,7 @@
 import styled, { keyframes } from 'styled-components';
 import { FaLinkedinIn } from 'react-icons/fa';
 import { AiOutlineMail } from 'react-icons/ai';
+import { TbBrandGithub } from 'react-icons/tb';
 import { COLORS } from '../../../globalStyles/colors';
 
 export const highlightAnimationIn = keyframes`
@@ -31,20 +32,29 @@ to{
 
 export const LinkedInIconStyled = styled(FaLinkedinIn)`
   height: 24px;
-  width: 24spx;
+  width: 24px;
   color: ${COLORS.GRAY_2};
   padding: 8px;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+`;
+
+export const GithubIconStyled = styled(TbBrandGithub)`
+  height: 24px;
+  width: 24px;
+  color: ${COLORS.GRAY_2};
+  padding: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 export const MailIconStyled = styled(AiOutlineMail)`
-  height: 24px;
-  width: 24spx;
+  height: 24.3px;
+  width: 24.3px;
   color: ${COLORS.GRAY_2};
   padding: 8.5px;
-  padding-left: 13px;
-  padding-right: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
 `;
 
 export const IconBoxStyle = styled.div`

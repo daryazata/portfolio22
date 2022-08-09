@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { AiFillLinkedin } from 'react-icons/ai';
 import { AiOutlineMail } from 'react-icons/ai';
+import { TbBrandGithub } from 'react-icons/tb';
 import { COLORS } from '../../../globalStyles/colors';
 
 // todo : why transform scale doesnt work when there is div around ?
@@ -42,11 +43,25 @@ export const AiFillLinkedinStyled = styled(AiFillLinkedin)`
   height: 28px;
   width: 28px;
   color: ${COLORS.GRAY_1};
-  margin-right: 15px;
+  margin-right: 20px;
   &:hover {
     padding-top: -5px;
     cursor: pointer;
     color: ${COLORS.WHITE};
+    transform: scale(1.2);
+  }
+`;
+
+export const GithubIconTopStyled = styled(TbBrandGithub)`
+  height: 28px;
+  width: 28px;
+  color: ${COLORS.GRAY_1};
+  margin-right: 20px;
+  &:hover {
+    padding-top: -5px;
+    cursor: pointer;
+    color: ${COLORS.WHITE};
+    transform: scale(1.2);
   }
 `;
 
@@ -54,10 +69,12 @@ export const AiOutlineMailStyled = styled(AiOutlineMail)`
   height: 28px;
   width: 28px;
   color: ${COLORS.GRAY_1};
+  margin-right: 20px;
   &:hover {
     padding-top: -5px;
     cursor: pointer;
     color: ${COLORS.WHITE};
+    transform: scale(1.2);
   }
 `;
 
@@ -93,12 +110,12 @@ export const styleContainerBoxMobile = {
   height: 70,
   bgcolor: COLORS.THEME_BG_BLACK,
   display: { xs: 'flex', md: 'none' },
+  alignItems: 'center',
   borderRadius: 1,
 };
 
 export const styleNavBarIcon = {
-  padding: 20,
-  marginRight: 10,
+  marginRight: 22,
   height: 30,
   width: 30,
   color: COLORS.GRAY_1,
@@ -117,6 +134,7 @@ export const styleNavBarContainer = {
   borderRadius: 1,
   px: '5vw',
   pt: 1,
+  display: { md: 'none' },
 };
 
 export const styleNavBarItem = {

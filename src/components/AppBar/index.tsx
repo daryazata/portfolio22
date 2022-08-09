@@ -10,6 +10,7 @@ import {
 } from './styles/stylesAppBar';
 import AppBarMobile from './AppBarMobile';
 import { COLORS } from '../../globalStyles/colors';
+import { LINKS } from '../../globals';
 
 const AppBar: FC = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -52,7 +53,6 @@ const AppBar: FC = () => {
           >
             Home
           </Box>
-
           <Box
             sx={styleAppBarItemTitle}
             style={aboutFocused}
@@ -61,7 +61,6 @@ const AppBar: FC = () => {
           >
             About
           </Box>
-
           <Box
             sx={styleAppBarItemTitle}
             style={projectFocused}
@@ -72,8 +71,12 @@ const AppBar: FC = () => {
           </Box>
         </Box>
         <Box>
-          <AiFillLinkedinStyled />
-          <AiOutlineMailStyled />
+          <Box component={'a'} target='_blank' href={LINKS.LINKEDIN}>
+            <AiFillLinkedinStyled />
+          </Box>
+          <Box component={'a'} href={LINKS.EMAIL}>
+            <AiOutlineMailStyled />
+          </Box>
         </Box>
       </Box>
     </>

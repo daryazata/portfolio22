@@ -6,17 +6,60 @@ import {
   ItemTitleSmallStyle,
 } from './styles/stylesProjects';
 
-const itemTitleSmall = 'Development';
-const itemTitleBig =
-  'Developing portfolio websites, current and previous portfolio ';
+import { Box } from '@mui/material';
 
-const SingleProject: FC = () => {
+type Props = {
+  imageUrl: string;
+  item: {
+    title: string;
+    descr: string;
+    link?: string;
+  };
+};
+
+const SingleProject: FC<Props> = ({ imageUrl, item }) => {
   return (
     <>
-      <ItemContainerStyle>
-        <ItemTitleSmallStyle>{itemTitleSmall}</ItemTitleSmallStyle>
-        <ItemTitleBigStyle>{itemTitleBig}</ItemTitleBigStyle>
-        <ButtonStyle>View details</ButtonStyle>
+      <ItemContainerStyle imageUrl={imageUrl}>
+        <Box
+          sx={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'space-evenly',
+            alignItems: 'center',
+          }}
+        >
+          <Box
+            sx={{
+              mx: 4,
+              mt: 20,
+              mb: { xs: 4, md: 8 },
+            }}
+          >
+            <ItemTitleSmallStyle>{item.title}</ItemTitleSmallStyle>
+            <ItemTitleBigStyle>{item.descr}</ItemTitleBigStyle>
+          </Box>
+          {item.link && (
+            <Box>
+              <ButtonStyle>
+                <Box
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    ':active': {
+                      color: 'inherit',
+                    },
+                  }}
+                  component={'a'}
+                  href={item.link}
+                  target='_blank'
+                >
+                  View in Play Store
+                </Box>
+              </ButtonStyle>
+            </Box>
+          )}
+        </Box>
       </ItemContainerStyle>
     </>
   );

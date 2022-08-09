@@ -4,12 +4,16 @@ import { HiMenu } from 'react-icons/hi';
 import { MdClose } from 'react-icons/md';
 
 import {
+  AiFillLinkedinStyled,
+  AiOutlineMailStyled,
   focusedMobileStyle,
+  GithubIconTopStyled,
   styleContainerBoxMobile,
   styleNavBarContainer,
   styleNavBarIcon,
   styleNavBarItem,
 } from './styles/stylesAppBar';
+import { LINKS } from '../../globals';
 
 const AppBarMobile: FC = () => {
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -36,7 +40,17 @@ const AppBarMobile: FC = () => {
   return (
     <div>
       <Box sx={styleContainerBoxMobile}>
-        <Box sx={{ flex: 1 }}></Box>
+        <Box sx={{ flex: 1, ml: '22px' }}>
+          <Box component={'a'} target='_blank' href={LINKS.LINKEDIN}>
+            <AiFillLinkedinStyled />
+          </Box>
+          <Box component={'a'} href={LINKS.EMAIL}>
+            <AiOutlineMailStyled />
+          </Box>
+          <Box component={'a'} target='_blank' href={LINKS.GITHUB}>
+            <GithubIconTopStyled />
+          </Box>
+        </Box>
         {!showSideMenu && (
           <HiMenu
             onClick={() => setShowSideMenu(true)}

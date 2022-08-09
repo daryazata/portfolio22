@@ -1,6 +1,5 @@
 import styled, { keyframes } from 'styled-components';
 import { COLORS } from '../../../globalStyles/colors';
-import bgTestRose from '../../../assets/bg-test-rose.jpg';
 import { styleFlexDirectionGlobalMui } from '../../../globalStyles';
 
 export const ProjectsTitle = styled.p`
@@ -36,12 +35,12 @@ export const scaleAnimationOut = keyframes`
     }
 `;
 
-export const ItemContainerStyle = styled.div`
+export const ItemContainerStyle = styled.div<{ imageUrl: string }>`
   font-family: 'Poppins', sans-serif;
   height: 580px;
   width: 380px;
   background: linear-gradient(rgba(29, 145, 235, 0.45), ${COLORS.THEME_YELLOW}),
-    url(${bgTestRose});
+    url(${(props) => props.imageUrl});
   background-size: cover;
   margin: 17px;
   border-radius: 5px;
@@ -60,7 +59,6 @@ export const ItemContainerStyle = styled.div`
 `;
 
 export const ItemTitleSmallStyle = styled.p`
-  padding-top: 70%;
   font-size: 1.1rem;
 `;
 
@@ -78,15 +76,11 @@ export const ItemTitleBigStyle = styled.div`
 
 export const ButtonStyle = styled.div`
   padding: 10px;
-  width: 100px;
-  margin: auto;
-  margin-top: 35px;
+  width: 200px;
   border-radius: 5px;
-  color: ${COLORS.GRAY_1};
   border: 1px ${COLORS.GRAY_1} solid;
   &:hover {
     border: 1.5px ${COLORS.GRAY_3} solid;
-    color: ${COLORS.GRAY_3};
   }
 `;
 
