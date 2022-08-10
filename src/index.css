@@ -17,8 +17,4 @@ code {
 /*  hide scrollbar  */
 ::-webkit-scrollbar {
   width: 0px;
-  visibility: hidden;
-}
-.scrollbar-hidden::-webkit-scrollbar {
-  display: none;
 }

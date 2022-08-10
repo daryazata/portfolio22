@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import { FC, useState } from 'react';
-import mePhoto from '../../assets/me_photo.png';
+import mePhoto from '../../assets/me_photo_s.jpg';
 import { focusedStyle } from '../AppBar/styles/stylesAppBar';
 import DetailsComponent from './DetailsComponent';
 import {
