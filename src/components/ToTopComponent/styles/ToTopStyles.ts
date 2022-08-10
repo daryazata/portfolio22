@@ -1,3 +1,5 @@
+import { MdArrowUpward } from 'react-icons/md';
+import styled from 'styled-components';
 import { COLORS } from '../../../globalStyles/colors';
 
 export const styleContainerBox = {
@@ -14,3 +16,8 @@ export const styleContainerBox = {
     color: COLORS.WHITE,
   },
 };
+
+export const ToTopIconStyled = styled(MdArrowUpward)`
+  height: 30px;
+  width: 30px;
+`;
